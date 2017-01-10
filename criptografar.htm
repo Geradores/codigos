@@ -1,0 +1,437 @@
+
+<html>
+
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app1.us.archive.org";archive_analytics.values.server_ms=272;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<link rel="stylesheet" href="/web/20150415224622cs_/http://www.webscripts.com.br/extras/css02.css" type="text/css">
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<link rel="stylesheet" href="css02.css" type="text/css">
+
+
+
+<title>Criptografar</title>
+
+
+
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.webscripts.com.br/gerador/criptografar.html";
+
+var firstYear = 1996;
+var displayDay = "15";
+var displayMonth = "abr";
+var displayYear = "2015";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(550, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.webscripts.com.br/gerador/criptografar.html" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20150415224622" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20141022172133/http://www.webscripts.com.br/gerador/criptografar.html" title="22 out 2014">OUT</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 22:46:22 abr 15, 2015">ABR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20150804151024/http://www.webscripts.com.br/gerador/criptografar.html" title="4 ago 2015"><strong>AGO</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20141022172133/http://www.webscripts.com.br/gerador/criptografar.html" title="17:21:33 out 22, 2014"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 22:46:22 abr 15, 2015">15</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20150804151024/http://www.webscripts.com.br/gerador/criptografar.html" title="15:10:24 ago 4, 2015"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20130918043605/http://www.webscripts.com.br/gerador/criptografar.html" title="18 set 2013"><strong>2013</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 22:46:22 abr 15, 2015">2015</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20160426123159/http://www.webscripts.com.br/gerador/criptografar.html" title="26 abr 2016"><strong>2016</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20150415224622*/http://www.webscripts.com.br/gerador/criptografar.html" title="See a list of every capture for this URL">13 captures</a>
+           <div class="r" title="Timespan for captures of this URL">7 ago 13 - 26 abr 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="550"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=550_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000011000_2014:-1:000000000100_2015:3:000100011111_2016:-1:111100000000_2017:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<Script Language="JavaScript1.2">
+<!--
+if (document.all)
+document.body.onmousedown=new Function("if (event.button==2||event.button==3)alert('Web Scripts - Seu Primeiro Passo é Aqui!!')");
+// -->
+</SCRIPT>
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="54%" id="AutoNumber1">
+    <tr>
+      <td width="99%" bgcolor="#004080">
+                              <font face="verdana" size="1">&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td width="99%">
+                              <TABLE height=22 cellSpacing=0 width=601 
+                              background="/web/20150415224622im_/http://www.webscripts.com.br/bc_img/barra.jpg" 
+                              border=0 align="left">
+                                <TR>
+                                <TD width=532><FONT face=verdana size=1>
+                                &nbsp; Geradores online | Criptografar</FONT></TD></TR></TABLE></td>
+    </tr>
+    <tr>
+      <td width="99%">
+                              <div align="left">
+                                <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="77%" id="AutoNumber3">
+                                  <tr>
+                                    <td width="1%">&nbsp;</td>
+                                    <td width="99%">
+<body>
+<body>
+
+                              <font size="2"><b>
+
+                              <div align="center">
+                                <center>
+                                <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber4" height="390">
+                                  <tr>
+                                    <td width="34%" height="389">
+                                    <p align="center">
+<SCRIPT language=JavaScript> 
+<!-- 
+var i=0; 
+var ie=(document.all)?1:0; 
+var ns=(document.layers)?1:0; 
+ 
+function gerar()
+{ 
+codigo = document.cripto.codigo_cripto.value; 
+if (codigo) 
+{ 
+document.cripto.codigo_cripto.value='Aguarde... Criptografando o código!'; 
+setTimeout("criptografar()",1000); 
+} 
+else alert('Favor inserir código!') 
+} 
+
+function criptografar()
+{ 
+document.cripto.codigo_cripto.value=''; 
+executa_cripto=escape(codigo); 
+document.cripto.codigo_cripto.value="<script>\n<!--\ndocument.write(unescape(\""+executa_cripto+"\"));\n//-->\n<\/script>"; 
+} 
+
+function visualizar()
+{ 
+if(document.cripto.codigo_cripto.value.length>0) 
+{ 
+pr=window.open("","visualizar","scrollbars=1,menubar=no,status=no,width=700,height=320,left=50,top=110"); 
+pr.document.write(document.cripto.codigo_cripto.value); 
+} 
+else alert('Favor inserir algum código para visualizar!') 
+} 
+
+function descriptografar() 
+{ 
+if (document.cripto.codigo_cripto.value.length>0) 
+{ 
+executa_descripto=unescape(document.cripto.codigo_cripto.value); 
+document.cripto.codigo_cripto.value=""+executa_descripto+"";
+} 
+else alert('É necessário algum código criptogrado para esta ação!') 
+} 
+// --> 
+</SCRIPT>
+<TABLE cellSpacing=0 cellPadding=0 width=342 border=0 style="border-collapse: collapse" bordercolor="#111111">
+  <TBODY>
+  <TR>
+    <TD vAlign=top height=314 align="center" width="500"> 
+      <TABLE cellSpacing=0 cellPadding=10 border=0 style="border-collapse: collapse" bordercolor="#111111" width="500">
+        <TBODY>
+        <TR>
+          <TD width="480">
+            <P style="margin-top: 0; margin-bottom: 0" align="justify">
+            <font size="1" face="Verdana">Este utilitário foi desenvolvido para que você possa criptografar 
+            as páginas do seu site evitando assim cópias indesejáveis do código 
+            fonte!</font></P>
+            <P style="margin-top: 0; margin-bottom: 0" align="justify">
+            <font size="1">&nbsp;</font></P>
+            <P style="margin-top: 0; margin-bottom: 0" align="justify">
+            <font size="1" face="Verdana">Você deverá inserir o código fonte de sua página no 
+            campo abaixo e clicar o botão "criptografar&quot;.</font></P>
+            </TD></TR></TBODY></TABLE>
+      <FORM name=cripto>
+      <TABLE cellSpacing=1 cellPadding=1 width=437 border=0>
+        <TBODY>
+        <TR>
+          <TD bgColor=#999999 width="469">
+            <TABLE cellSpacing=0 cellPadding=0 width="494" border=0>
+              <TBODY>
+              <TR>
+                <TD width="494">
+                  <TABLE cellSpacing=0 cellPadding=10 width="100%" 
+                  bgColor=#ffffff border=0 height="1">
+                    <TBODY>
+                    <TR>
+                      <TD height="1">
+                      <p style="margin-top: 0; margin-bottom: 0" align="center">
+                      <b><font face="Verdana" size="1">Para copiar selecione o 
+                      código e Ctrl + C e cole em seu site</font></b></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=#ffffff width="494">
+                  <DIV align=center><TEXTAREA name=codigo_cripto rows=10 cols=50></TEXTAREA> 
+                  <BR><BR>
+                    <INPUT onclick=gerar() type=button value=Criptografar name=button2 style="font-family: Verdana; font-size: 10 px; font-weight: bold">&nbsp;
+                    <INPUT onclick=descriptografar() type=button value=Descriptografar name=button style="font-family: Verdana; font-size: 10 px; font-weight: bold"> 
+                  <BR><BR></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=5 width=492 border=0>
+        <TBODY>
+        <TR>
+          <TD height=40 width="482">
+            <DIV align=center>
+              <INPUT onclick=visualizar() type=button value="Visualizar página" name=button3 style="font-family: Verdana; font-size: 10 px; font-weight: bold"> 
+            &nbsp; 
+              <INPUT onclick=form.codigo_cripto.focus();form.codigo_cripto.select() type=button value="Selecionar código" name=selcod style="font-family: Verdana; font-size: 10 px; font-weight: bold"> 
+            &nbsp;
+
+                              <font size="2"><b>
+
+              <INPUT type=reset value="Limpar " name=Submit style="font-family: Verdana; font-size: 10 px; font-weight: bold"></b></font> 
+        </DIV></TD></TR></TBODY></TABLE>
+      </FORM>
+    </TD></TR></TBODY></TABLE></td>
+                  </tr>
+                  <tr>
+                    <td width="100%" height="1" align="center">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+                      <tr>
+                        <td width="80%" align="center">
+<script language='JavaScript' type='text/javascript'>
+<!--
+   if (!document.phpAds_used) document.phpAds_used = ',';
+   phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+   
+   document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+   document.write ("/web/20150415224622/http://adserver.iservicos.com/adjs.php?n=" + phpAds_random);
+   document.write ("&amp;what=zone:1");
+   document.write ("&amp;exclude=" + document.phpAds_used);
+   if (document.referrer)
+      document.write ("&amp;referer=" + escape(document.referrer));
+   document.write ("'><" + "/script>");
+//-->
+                        </script><noscript>
+                        
+                        <script language='JavaScript' type='text/javascript'>
+<!--
+   if (!document.phpAds_used) document.phpAds_used = ',';
+   phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+   
+   document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+   document.write ("/web/20150415224622/http://adserver.iservicos.com/adjs.php?n=" + phpAds_random);
+   document.write ("&amp;what=zone:2");
+   document.write ("&amp;exclude=" + document.phpAds_used);
+   if (document.referrer)
+      document.write ("&amp;referer=" + escape(document.referrer));
+   document.write ("'><" + "/script>");
+//-->
+                        </script><noscript></td>
+                                  </tr>
+                                </table>
+                                </center>
+                              </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              </td>
+    </tr>
+  </table>
+
+<head>
+<meta http-equiv="Content-Language" content="pt-br">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Geradores Online</title>
+</head>
+<body>
+
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber2">
+    <tr>
+      <td width="100%" bgcolor="#FFFFFF"><font size="1">&nbsp;</font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</body>
+</html></table>
+    <div align="left">
+      <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="77%" id="AutoNumber5">
+        <tr>
+          <td width="100%">
+          <p align="center"><font size="1" face="Verdana">Para copiar selecione 
+          o código e Ctrl + C e cole em seu site</font></td>
+        </tr>
+      </table>
+    </div></table>
+    <p style="margin-top: 0; margin-bottom: 0"><font size="1" face="Verdana">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </font></p>
+
+
