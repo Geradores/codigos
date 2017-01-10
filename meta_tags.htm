@@ -1,0 +1,349 @@
+
+<html>
+
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+
+<head>
+<style>
+    body {SCROLLBAR-FACE-COLOR: #dee3e7; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #dee3e7; SCROLLBAR-3DLIGHT-COLOR: #d1d7dc;  SCROLLBAR-ARROW-COLOR: #006699; SCROLLBAR-TRACK-COLOR: #efefef; SCROLLBAR-DARKSHADOW-COLOR: #98aab1; BACKGROUND-COLOR: #FFFFFF}
+    A:link {COLOR: #000000; FONT-SIZE: 11px; FONT-FAMILY: verdana; TEXT-DECORATION: none}
+    A:visited {COLOR: #000000; FONT-SIZE: 11px; FONT-FAMILY: verdana; TEXT-DECORATION: none}
+    A:active {COLOR: #000000; FONT-SIZE: 11px; FONT-FAMILY: verdana; TEXT-DECORATION: underline}
+    A:hover {COLOR: #000000; FONT-SIZE: 11px; FONT-FAMILY: verdana; TEXT-DECORATION: underline}
+</style>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<link rel="stylesheet" href="http://www.webscripts.com.br/extras/css02.css" type="text/css">
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<link rel="stylesheet" href="css02.css" type="text/css">
+
+
+
+<title>Meta Tags </title>
+
+
+
+
+</head>
+
+
+
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.webscripts.com.br/gerador/meta.html";
+
+var firstYear = 1996;
+var displayDay = "13";
+var displayMonth = "out";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(550, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       &nbsp;</td>
+   <td class="c">
+       &nbsp;</td>
+   <td class="r">
+       &nbsp;</td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="77%" id="AutoNumber1">
+    <tr>
+      <td width="99%" bgcolor="#004080">
+                              <font face="verdana" size="1">&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td width="99%">
+                              <TABLE height=22 cellSpacing=0 width=601 
+                              background="/web/20131013080718im_/http://www.webscripts.com.br/bc_img/barra.jpg" 
+                              border=0 align="left">
+                                <TR>
+                                <TD width=532><FONT face=verdana size=1>
+                                &nbsp; Geradores online | </FONT>
+                                <font face="Verdana" size="1">
+                                <span lang="pt-br">M</span>eta
+                                <span lang="pt-br">T</span>ags</font></TD></TR></TABLE></td>
+    </tr>
+    <tr>
+      <td width="99%">
+                              <div align="left">
+                                <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="20%" id="AutoNumber3">
+                                  <tr>
+<tr><td width="100%" valign="top" style="padding:2px; padding-bottom: 0px;"></td></tr><tr><td width="100%" valign="top">
+  <table border="0" cellpadding="0" cellspacing="2" width="593">
+<script>
+function metatag(){
+form=document.meta;
+txt='<META NAME="TITLE" CONTENT="'+form.title.value+'">\r\n';
+txt+='<META NAME="DESCRIPTION" CONTENT="'+form.description.value+'">\r\n';
+txt+='<META NAME="KEYWORDS" CONTENT="'+form.keywords.value+'">\r\n';
+txt+='<META NAME="OWNER" CONTENT="'+form.owner.value+'">\r\n';
+txt+='<META NAME="AUTHOR" CONTENT="'+form.auther.value+'">\r\n';
+txt+='<META HTTP-EQUIV="CONTENT-LANGUAGE" CONTENT="'+form.language.options[form.language.selectedIndex].text+'">\r\n';
+txt+='<META NAME="RATING" CONTENT="'+form.rating.options[form.rating.selectedIndex].text+'">\r\n';
+if(form.robots_index.checked){var index='noindex';}else{index='index';}
+if(form.robots_follow.checked){var follow='nofollow';}else{follow='follow';}
+txt+='<META NAME="ROBOTS" CONTENT="'+index+','+follow+'">\r\n';
+form.code.value=txt;
+}
+  </script><tr>
+<td class="desc" colspan="2" width="589">
+<p align="center"><b><font face="Verdana" size="2">Preencha os campos:</font></b></td></tr><tr>
+  <td class="row1" width="195">
+  <p align="right"><font size="1" face="Verdana">Nome do site:</font></td>
+<td class="row2" width="392"><input type="text" name="title" value="" size="30" class="input"></td>
+</tr><tr><td class="row1" width="195">
+  <p align="right"><font size="1" face="Verdana">Descrição do site:</font></td>
+<td class="row2" width="392">
+<textarea name="description" cols="29" rows="4" wrap="soft" class="input"></textarea></td>
+</tr><tr><td class="row1" width="195">
+  <p align="right"><font size="1" face="Verdana">Palavras-chave, separadas por 
+  vírgulas:&nbsp;</font></td>
+<td class="row2" width="392">
+<textarea name="keywords" cols="29" rows="4" wrap="soft" class="input"></textarea></td>
+</tr><tr><td class="row1" width="195" align="right">
+  <font face="Verdana" size="1">Seu e-mail:</font></td>
+<td class="row2" width="392"><input type="text" name="owner" value="" size="30" class="input"></td>
+</tr><tr><td class="row1" width="195" align="right">
+  <font face="Verdana" size="1">Seu nome:</font></td>
+<td class="row2" width="392"><input type="text" name="auther" value="" size="30" class="input"></td>
+</tr><tr><td class="row1" width="195" align="right">
+  <font face="Verdana" size="1">Idioma</font></td>
+<td class="row2" width="392"><select name="language" class="input">
+<option value="">Portuguese</option>
+<option value="">French</option>
+<option value="">German</option>
+<option value="">English</option>
+<option value="">Spanish</option>
+<option value="">Italian</option>
+<option value="">Russian</option>
+<option value="">Japanese</option>
+<option value="">Other (you type it in)</option>
+</select></td>
+</tr><tr><td class="desc" colspan="2" width="589">
+  <p align="center" style="margin-top: 0; margin-bottom: 0"><font size="1">&nbsp;</font><p align="center" style="margin-top: 0; margin-bottom: 0"><b><font size="2" face="Verdana">
+  Tradução:</font></b></td></tr><tr>
+  <td class="row2" colspan="2" width="589">
+  <div align="center">
+    <center>
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="73%" id="AutoNumber1">
+      <tr>
+        <td width="100%">
+        <p style="margin-top: 0; margin-bottom: 0"><font face="Verdana" size="1">
+        Portuguese = Português<br>French = Francês<br>German = Alemão<br>English 
+        = Inglês<br>Spanish = Espanhol<br>Italian = Italiano<br>Russian = Russo<br>
+        Japanese = Japonês<br>Other (you type it in) = Outro (você escolhe e 
+        digita no código)</font></p>
+        <p style="margin-top: 0; margin-bottom: 0">
+        <font face="Verdana" size="1">&nbsp;</font></td>
+      </tr>
+    </table>
+    </center>
+  </div>
+  </td>
+</tr><tr><td class="row1" width="195" align="right">
+  <font size="1" face="Verdana">Conteúdo:</font></td>
+<td class="row2" width="392"><select name="objecttype" class="input">
+<option value="">Internet/WWW</option>
+<option value="">Cultura</option>
+<option value="">Religião</option>
+<option value="">Pessoal</option>
+<option value="">Informática</option>
+<option value="">Saúde</option>
+<option value="">Shopping</option>
+<option value="">Games</option>
+<option value="">Fã clube</option>
+<option value="">Erótico</option>
+<option value="">Software</option>
+<option value="">Revista</option>
+<option value="">Email</option>
+<option value="">Busca</option>
+<option value="">Undergroud</option>
+<option>Webmaster</option>
+<option value="">Outros...</option>
+</select></td>
+</tr><tr><td class="row1" width="195" align="right">
+  <font size="1" face="Verdana">Conteúdo, para seus visitantes:&nbsp;</font></td>
+<td class="row2" width="392"><select name="rating" class="input">
+<option value="">General</option>
+<option value="">Mature</option>
+<option value="">Restricted</option>
+<option value="">14 years</option>
+</select></td>
+</tr><tr><td class="desc" colspan="2" width="589">
+  <p align="center" style="margin-top: 0; margin-bottom: 0"><b>
+  <font size="1" face="Verdana">&nbsp; </font></b>
+  <p align="center" style="margin-top: 0; margin-bottom: 0"><b><font size="2" face="Verdana">
+  Tradução:</font></b></td></tr><tr>
+  <td class="row2" colspan="2" width="589">
+  <div align="center">
+    <center>
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="80%" id="AutoNumber2">
+      <tr>
+        <td width="100%">
+        <p style="margin-top: 0; margin-bottom: 0"><font face="Verdana" size="1">
+        Mature = Maduro (site para pessoas adultas)<br>General = Geral (site 
+        para pessoas de todas as idades)<br>Restricted = Restringido (site com 
+        conteúdo restringido à uma faixa etária)<br>14 years = 14 anos (site 
+        para pessoas maiores de 14 anos)</font></p>
+        <p style="margin-top: 0; margin-bottom: 0">
+        <font face="Verdana" size="1">&nbsp;</font></td>
+      </tr>
+    </table>
+    </center>
+  </div>
+  </td>
+</tr><tr><td class="row1" width="195">
+  <p align="right"><font size="1" face="Verdana">Robots&nbsp;&nbsp; </font></td>
+<td class="row2" width="392"><input type="checkbox" name="robots_follow" value="Y" >
+<font size="1" face="Verdana">Incluir as outras páginas</font><br><input type="checkbox" name="robots_index" value="Y" ><font size="1" face="Verdana"> 
+Incluir a index (a páginas com o código)</font><br><input type="checkbox" name="robots_x" value="ON"  checked>
+<font size="1" face="Verdana">Incluir todas</font></td>
+</tr><tr><td class="desc" colspan="2" width="589">
+  <p align="center" style="margin-top: 0; margin-bottom: 0"><b>
+  <font size="1" face="Verdana">&nbsp;&nbsp;&nbsp; </font></b>
+  <p align="center" style="margin-top: 0; margin-bottom: 0"><b><font size="2" face="Verdana">
+  Explicação:</font></b></td></tr><tr>
+  <td class="row2" colspan="2" width="589">
+  <div align="center">
+    <center>
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="80%" id="AutoNumber3">
+      <tr>
+        <td width="100%">
+        <p style="margin-top: 0; margin-bottom: 0"><font size="1" face="Verdana">
+        Sua Meta TAG:<br>Pronto, copie e cole os seguintes MetaTag entre os TAG<br>
+        &lt;HEAD&gt; e &lt;/HEAD&gt; da sua seção de HTML. </font>
+        </p>
+        <p style="margin-top: 0; margin-bottom: 0">
+        <font face="Verdana" size="1">&nbsp;</font></td>
+      </tr>
+    </table>
+    </center>
+  </div>
+  </td>
+</tr><tr><td class="row2" colspan="2" width="589">
+  <center>
+  <input type="button" value="Gerar Código" onclick="metatag()" class="bot"></td>
+</tr><tr><td class="row2" colspan="2" align="center" width="589">
+  <p style="margin-top: 0; margin-bottom: 0">
+  <textarea name="code" cols="41" rows="5" wrap="soft" class="input"></textarea></p>
+  <p style="margin-top: 0; margin-bottom: 0"><font size="1" face="Verdana">&nbsp;Para 
+  copiar selecione o código e Ctrl + C e cole em seu site</font><p style="margin-top: 0; margin-bottom: 0">
+  <font face="Verdana" size="1">&nbsp;</font></td>
+</tr></td></tr></table></td></tr></form>
+              
+            </table></td>
+          <td valign="top" bgcolor="#EFEFEF"></font>
+</body>
+<Script Language="JavaScript1.2">
+<!--
+if (document.all)
+document.body.onmousedown=new Function("if (event.button==2||event.button==3)alert('Web Scripts - Seu Primeiro Passo é Aqui!!')");
+// -->
+                                    </SCRIPT>
+</html>
