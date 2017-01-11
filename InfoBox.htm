@@ -1,0 +1,354 @@
+
+
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app15.us.archive.org";archive_analytics.values.server_ms=309;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.webscripts.com.br/gerador/InfoBox.htm";
+
+var firstYear = 1996;
+var displayDay = "8";
+var displayMonth = "ago";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(550, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.webscripts.com.br/gerador/InfoBox.htm" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20130808011853" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    jul
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 1:18:53 ago 8, 2013">AGO</td>
+		<td class="f" nowrap="nowrap">
+		
+		    set
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 1:18:53 ago 8, 2013">8</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2012
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 1:18:53 ago 8, 2013">2013</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2014
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20130808011853*/http://www.webscripts.com.br/gerador/InfoBox.htm" title="See a list of every capture for this URL">1 captures</a>
+           <div class="r" title="Timespan for captures of this URL">8 ago 13 - 8 ago 13</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="550"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=550_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:7:000000010000_2014:-1:000000000000_2015:-1:000000000000_2016:-1:000000000000_2017:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+  <tr>
+    <td width="100%" bgcolor="#000080"><font size="1">&nbsp;</font></td>
+  </tr>
+</table>
+<p style="margin-top: 0; margin-bottom: 0"><?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>Info Box</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /></head><head><link rel="stylesheet" href="/web/20130808011853cs_/http://www.webscripts.com.br/estilo2.css" type="text/css" /><style type="text/css">
+.bah{ border: 0px; background-color: transparent;}
+</style><script language="JavaScript" type="text/javascript">
+<!--
+function replaceChars(entry) {
+out = "\n"; // replace this
+add = "<br>"; // with this
+temp = "" + entry; // temporary holder
+
+while (temp.indexOf(out)>-1) {
+pos= temp.indexOf(out);
+temp = "" + (temp.substring(0, pos) + add + 
+temp.substring((pos + out.length), temp.length));
+}
+document.formname.wordstemp.value = temp;
+}
+
+function generate(){
+replaceChars(document.formname.words.value);
+
+var bordcol = document.formname.tbord.value;
+var titface = document.formname.titface.value;
+var titsize = document.formname.titsize.value;
+var titcol = document.formname.titcol.value;
+var title = document.formname.title.value;
+var textfont = document.formname.textfont.value;
+var textsize = document.formname.textsize.value;
+var textcol = document.formname.textcol.value;
+var words = document.formname.wordstemp.value;
+
+document.formname.gencode.value='<table border="1" bordercolor="'+bordcol+'" STYLE="border:thin">\n'+
+'<tr><td>\n'+
+'<FONT FACE="'+titface+'" SIZE="'+titsize+'" COLOR="'+titcol+'">\n'+
+'<CENTER><B>'+title+'</B></CENTER></td>\n</tr>\n<tr>\n'+
+'<td>\n'+
+'<FONT FACE="'+textfont+'" SIZE="'+textsize+'" COLOR="'+textcol+'">\n'+
+''+words+'</FONT></td>\n</tr>\n</table>';
+}
+
+//-->
+</script></head><body><a href="/web/20130808011853/http://www.vickys.com.br/" target="_blank"></p>
+<div id="popup">
+<div id="popup1"></div>
+<div id="popup2"></div>
+</div>
+</a>
+<div id="popupbody" style="width: 596; height: 568">
+
+ <form name="formname" id="formname"> 
+  <p class="titulo2" align="justify" style="margin-top: 0; margin-bottom: 0"><b>I<font face="Verdana" size="2">nfo-Box</span></font></b></p>
+	<table border="1" bordercolor="#3F7EBE" style="border:thin" height="85">
+<tr><td background="" height="16">
+<font face="verdana" size="2" color="#72A4CD">
+<center><b>:: Novidades do Site  ::</b></center></font></td>
+</tr>
+<tr>
+		<td background="" height="57">
+<p style="margin-top: 0; margin-bottom: 0">
+<font face="verdana" size="1" color="#000000">
+- Novo Geradors online<br />
+		  - Ferramentas para Blog
+<br />
+		  - Novo Fórum
+<br />
+		  - Novo recode de visitas
+<br />
+		  </font></td>
+</tr>
+</table>
+
+    <p>
+  </p>
+	<table width="596" align="center" border="0" cellpadding="2">
+    <tr> 
+      <td width="588"> 
+        <p style="margin-top: 0; margin-bottom: 0">
+            <input name="success2" type="hidden" value="http://www.spriteworks.com/thanker.html" />
+          <font color="#000000" face="Verdana" size="2"><b>Cor da borda da Info-Box:</b></font> 
+            <input maxlength="10" name="tbord" size="10" value="#3F7EBE" />
+          <br />
+          <font color="#000000"><b><font face="Verdana" size="1">&nbsp;</font><font face="Verdana" size="2"><br>
+          Informa&ccedil;&otilde;es 
+          dobre o t&iacute;tulo da Info-Box:</font><font size="1"> </font><br />
+          </b><font face="Verdana" size="2">Tipo da Fonte:</font></font> 
+            <input maxlength="100" name="titface" size="10" value="verdana" />
+          &nbsp;<font color="#000000" size="2" face="Verdana">Tamanho da Fonte:</font> 
+            <input maxlength="30" name="titsize" size="4" value="2" />
+          <font color="#000000">&nbsp;<font face="Verdana" size="2">Cor da Fonte:</font></font> 
+            <input maxlength="10" name="titcol" size="10" value="#72A4CD" />
+          <font face="Verdana" size="2"><b><font color="#000000"><br>
+          </font><font face="Verdana" size="1">&nbsp;</font><br>
+          T&iacute;tulo 
+          da sua Info-Box:</b> </font> <br />
+          <font color="#000000"><b> 
+            <input maxlength="150" name="title" size="40" value="- Novidades -" />
+          <br>
+          <font face="Verdana" size="1">&nbsp;</font><font face="Verdana" size="2"><br>
+          Informa&ccedil;&atilde;o 
+          do texto no corpo principal da Info-Box:</font></b></font><br />
+          <font color="#000000"><font face="Verdana" size="2">Tipo sa Fonte:</font> 
+            <input maxlength="100" name="textfont" size="10" value="verdana" />
+          &nbsp;<font face="Verdana" size="2">Tamanho da Fonte:</font> 
+            <input maxlength="30" name="textsize" size="4" value="1" />
+          &nbsp;<font face="Verdana" size="1">Cor da Fonte:</font> 
+            <input maxlength="10" name="textcol" size="10" value="#000000" />
+          <br>
+          <font size="1">&nbsp;</font></font><font face="Verdana"><font color="#000000"><b><font size="2"><br>
+          Informa&ccedil;&otilde;es 
+          da sua Info-Box:</font></b></font><font size="2"> </font> 
+          <br />
+          <cite><small>(<font size="1">Digite aqui o texto EXATAMENTE como 
+          você quer que ele apare&ccedil;a dentro da info-box.</font>)</small></cite>
+          </font>
+          <br />
+            <input type="hidden" name="wordstemp" />
+          <textarea name="words" cols="60" rows="6"></textarea> </p>
+        <center>
+            <input type="button" value="Gerar C&oacute;digo" onclick="generate();" name="button2" />
+            <input type="reset" value="Limpar" name="reset2" />
+          <script language="JavaScript" type="text/javascript">
+function preview() {
+if(document.formname.gencode.value){
+look=open("","Preview","width=750,height=250,top=0,left=0,'resizable=1,status=0,menubar=0,toolbar=0,scrollbars=1,location=0,directories=0");
+look.document.write('<A HREF="javascript:window.print()"><B>Print this</B></A><br><br>\n');
+look.document.write(document.formname.gencode.value);}
+else{alert('Please "Generate Script" First');}
+}
+            </script>
+        </center>
+      </td>
+    </tr>
+  </table>
+  <p align="center" style="margin-top: 0; margin-bottom: 0"><font face="Verdana" size="1"><b>Copie o c&oacute;digo gerado e cole no local onde vc quer 
+    que a info-box apare&ccedil;a.</b><br>
+  </font> 
+    <textarea onfocus="this.select()" onmouseover="this.focus()" name="gencode" rows="5" cols="30"></textarea> </p>
+</form>
+
+</div>
+<div id="popupbt"></div>
+</body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 1:18:53 ago 8, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 0:29:10 jan 11, 2017.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
